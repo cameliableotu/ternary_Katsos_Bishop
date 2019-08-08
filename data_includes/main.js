@@ -1,16 +1,26 @@
 
 PennController.ResetPrefix(null); // Initiates PennController
 // Start typing your code here
+var items = [
 
+    ["consent", "PennController", PennController(
+        newHtml("consent form", "consent.html")
+            .print()
+        ,
+        newButton("consent button", "By clicking this button I indicate my consent")
+            .print()
+            .wait()
+    )]
+    ,
+    ["description", "PennController", PennController(
+        newHtml("description form", "description.html")
+            .print()
+        ,
+        newButton("start", "Start the experiment")
+            .print()
+            .wait()
+    )]
 
-	PennController(
-defaultText
-.print()
-	,
-	newText("<p>Welcome!</p>")
-	,
-	newText("<p>In this experiment, you will have to report which of two pictures matches a description.</p>")
-		)
-	
+];
 
 
