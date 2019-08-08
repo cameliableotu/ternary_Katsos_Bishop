@@ -16,4 +16,4 @@ PennController(	defaultText.print()	, newText("<p> Once upon a time in a far awa
 ,
 newImage("wizardandragon.png")
 .print()
-) Start typing your code here
+) 
