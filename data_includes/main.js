@@ -7,5 +7,4 @@ newImage("bigapple.png")
 ,
 newImage("smallapple.png")
 	.print()
-,
 )
