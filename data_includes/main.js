@@ -1,21 +1,14 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome" , randomize("experiment") , "send" , "final" )
-PennController( "welcome" ,
-defaultText
+PennController.ResetPrefix(null)	
+PennController(newText("Big apple or small apple?")
 .print()
 ,
-newText("<p>Welcome!</p>")
+newImage("bigapple.png")
+.print()
 ,
-newText("<p> Hey, everyone, we are going to play a really fun and nice game together with a wizard and baby dragon and some really cool shadows belonging to some animals Let's do this!.</p>"),
-newText("<p>Please say what your name is and your age and then click the button below to start the game.</p>")
-,	newTextInput("ID")
-.print(),
-	newButton("Start")
+newImage("smallapple.png")
 	.print()
-	.wait()
-	,
-	newVar("ID")
-	.settings.global()
-	.set( getTextInput("ID") )
-     )
-	.log( "ID" , getVar("ID") )
+,
+newKey("FJ")
+.wait()
+)
