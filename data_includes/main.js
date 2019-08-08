@@ -10,6 +10,7 @@ defaultText
 	newText("<p>Welcome!</p>")
 	,
 	newText("<p>In this experiment, you will have to report which of two pictures matches a description.</p>")
+		)
 	
 
 
