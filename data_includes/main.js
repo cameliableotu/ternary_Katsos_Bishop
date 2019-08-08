@@ -6,5 +6,7 @@ newImage("bigapple.png")
 .print()
 ,
 newImage("smallapple.png")
-	.print()
+	.print())
+	       newKey(" ")
+	.wait()
 
