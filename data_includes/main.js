@@ -4,7 +4,7 @@ PennController(
     newText("The fish swim in a tank which is perfectly round")
         .print()
     ,
-    newImage("2fishRoundTank.png")
+    newImage("wizardanddragon.png")
         .print()
     ,
     newKey(" ")
