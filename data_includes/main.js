@@ -1,13 +1,12 @@
 PennController.ResetPrefix(null);
 
 PennController(
-    newText("test sentence", "A is colder than B, though A is not cold yet.")
+    newText("The fish swim in a tank which is perfectly round")
         .print()
     ,
-    newText("instruction", "Press F if this is a coherent statement, press J otherwise.")
+    newImage("2fishRoundTank.png")
         .print()
     ,
-    newKey("answer", "FJ")
-        .wait() // This waits for a key press before validation
-);
-
+    newKey(" ")
+        .wait()
+)
