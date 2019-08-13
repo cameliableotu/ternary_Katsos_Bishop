@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "hey everyone" , randomize("experiment") , "send" , "final" )
+
 PennController( "welcome" ,
     defaultText
         .print()
