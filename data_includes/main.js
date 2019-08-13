@@ -22,5 +22,19 @@ PennController( "welcome" ,
         .set( getTextInput("ID") )
 )
 .log( "ID" , getVar("ID") )
+PennController("welcome" ,
+	    defaultText
+	        .print()
+	    ,
+	    newText ("<p> Once upon a time in a faraway land there lived a very gifted wizard Merlin who liked to play with shadows and make others guess what they are. </p>")
+	    ,
+	                  
+	     newImage ("wizardanddragon.png")
+               .print ()
+	     ,
+	                     ,
+	    newKey(" ")
+	        .wait()
+	)
 
   
