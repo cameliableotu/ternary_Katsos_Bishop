@@ -32,7 +32,7 @@ PennController("welcome" ,
 	     newImage ("wizardanddragon.png")
                .print ()
 	     ,
-	                     ,
+	                  
 	    newKey(" ")
 	        .wait()
 	)
