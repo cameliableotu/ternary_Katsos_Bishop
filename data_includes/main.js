@@ -35,12 +35,7 @@ PennController("welcome" ,
 	       ,
 	       newKey(" ")
         .wait()
-)
 
-	       
-PennController("welcome" ,
-	    defaultText
-	        .print()
 	       ,
 newText ("<p> Now Merlin is playing the shadow game with a really cute baby dragon, who has to guess whose animal the shadow belongs to.</p>")
 	,
