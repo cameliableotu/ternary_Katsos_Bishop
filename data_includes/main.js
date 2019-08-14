@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome", "details", "trial1", "trial2", "experiment", "send" , "final" )
+PennController.Sequence( "welcome", "details", "trial", "trialbunny", "experiment", "send" , "final" )
 
 PennController( "welcome" ,
     defaultText
@@ -61,7 +61,7 @@ newText ("<p> When he guesses the shadow correctly, you have to reward the baby 
         .wait()
 )
 	    
-PennController("trial1" ,
+PennController("trial" ,
 	    defaultText
 	        .print()
 	    
@@ -74,19 +74,20 @@ newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "
         .wait()
 )
 
-PennController("trial2" ,
+PennController("trialbunny" ,
 	    defaultText
 	        .print()
 	    
 	       ,
 	       newText 
 	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow and he says.. . </p>"),
-	       
+	      
 	       newImage ("bunnyshadow", "bunnyshadow.jpg")
 	       .print ( )
 	       ,
-	       newText ("<p> It is a cow.
-			How will you reward the baby dragon? </p>")
+	       newText ("<p> It is a cow. </p>")
+	       ,
+	       newText ("<p> How will you reward the baby dragon? </p>")
 	       ,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
