@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome", "experiment", "send" , "final" )
+PennController.Sequence( "welcome", "details", "experiment", "send" , "final" )
 
 PennController( "welcome" ,
     defaultText
@@ -35,7 +35,7 @@ PennController("welcome" ,
 	       ,
 	       newKey(" ")
         .wait())
-PennController("welcome" ,
+PennController("details" ,
 	    defaultText
 	        .print()
 	    
