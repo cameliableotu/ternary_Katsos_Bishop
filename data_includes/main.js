@@ -82,7 +82,7 @@ PennController("trialbunny" ,
 	       newText 
 	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow and he says.. . </p>"),
 	      
-	       newImage ("bunnyshadow", "bunnyshadow.jpg")
+	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
 	       .print ( )
 	       ,
 	       newText ("<p> It is a cow. </p>")
