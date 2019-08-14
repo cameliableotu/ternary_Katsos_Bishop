@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome", "details", "experiment", "send" , "final" )
+PennController.Sequence( "welcome", "details", "trial1", "trial2", "experiment", "send" , "final" )
 
 PennController( "welcome" ,
     defaultText
@@ -61,6 +61,55 @@ newText ("<p> When he guesses the shadow correctly, you have to reward the baby 
         .wait()
 )
 	    
+PennController("trial1" ,
+	    defaultText
+	        .print()
+	    
+	       ,
+newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "),
+	       newImage ("smallpinkbunny", "smallpinkbunny.png")
+	       .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+)
+
+PennController("trial2" ,
+	    defaultText
+	        .print()
+	    
+	       ,
+	       newText 
+	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. . </p>"),
+	       
+	       newImage ("bunnyshadow", "bunnyshadow.jpg")
+	       .print ( )
+	       ,
+	       newText ("<p> The baby dragon says: <<It is a cow.>> How will you reward the baby dragon? </p>")
+	       ,
+	       newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       // newKey("FJ")
+newSelector()
+    .settings.add( getImage("two") , getImage("one") )
+    .settings.keys(          "F"    ,          "J"   )
+    .settings.log()
+    .wait()
+)
+	       
+	       
+	       
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
