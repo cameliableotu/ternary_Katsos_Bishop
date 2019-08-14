@@ -32,8 +32,11 @@ PennController("welcome" ,
 	                  
 	     newImage ("wizardanddragon.png")
                .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+)
 	    
-	)
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
