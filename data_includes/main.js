@@ -80,12 +80,13 @@ PennController("trial2" ,
 	    
 	       ,
 	       newText 
-	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. . </p>"),
+	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow and he says.. . </p>"),
 	       
 	       newImage ("bunnyshadow", "bunnyshadow.jpg")
 	       .print ( )
 	       ,
-	       newText ("<p> The baby dragon says: <<It is a cow.>> How will you reward the baby dragon? </p>")
+	       newText ("<p> It is a cow.
+			How will you reward the baby dragon? </p>")
 	       ,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -102,7 +103,7 @@ PennController("trial2" ,
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("two") , getImage("one") )
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
