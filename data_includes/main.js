@@ -109,9 +109,41 @@ newSelector()
     .settings.log()
     .wait()
 )
+PennController("trialbunny2" ,
+	    defaultText
+	        .print()
+	    
+	       ,
 	       
-	       
-	       
+	      
+	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
+	       .print ( )
+	       ,
+	       newText ("<p> It is a bunny. </p>")
+	       ,
+	       newText ("<p> How will you reward the baby dragon? </p>")
+	       ,
+	       newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       // newKey("FJ")
+newSelector()
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
+    .settings.log()
+    .wait()
+)
+	  	       
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
