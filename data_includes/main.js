@@ -707,8 +707,9 @@ PennController("experiment" ,
         .wait()
 	       
 )
-PennController.Template( PennController.GetTable("frogstage1.csv") ,
-row => PennController( 
+PennController.Template (PennController.GetTable("frogstage1.csv") ,
+row => PennController( ( "Description" ,
+       
 newImage (“Testimage”, row.Testimage)
 .print ( ),
 	
