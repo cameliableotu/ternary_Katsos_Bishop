@@ -80,14 +80,12 @@ PennController("trialbunny" ,
 	    
 	       ,
 	       newText 
-	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow and he says.. . </p>"),
+	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. </p>"),
 	      
 	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
 	       .print ( )
 	       ,
-	       newText ("<p> It is a cow. </p>")
-	       ,
-	       newText ("<p> How will you reward the baby dragon? </p>")
+	       newText ("<p> Baby Dragon: It is a cow. How will you reward the baby dragon? </p>")
 	       ,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -206,6 +204,10 @@ PennController ("experiment",
 		newImage ("dogshadow.jpg")
                .print ()
 		,
+		newAudio("barking", barking.AudioFile)
+		.play()
+		,
+
 		newText ("<p> Baby Dragon: It is certain that it is a dog. How will you reward the baby dragon? </p>")
 	       ,
 	       newImage("bigapple", "bigapple.png")
