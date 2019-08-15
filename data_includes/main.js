@@ -606,6 +606,7 @@ PennController ("experiment",
 		.play()
 		,
 		newText ("<p> Now let's see what the baby dragon has to say about the shadow and reward him. </p>")
+		,
 		newText ("<p> Baby Dragon: It is certain that it is the blue cat.</p>")
 		,
 	       newImage("bigapple", "bigapple.png")
