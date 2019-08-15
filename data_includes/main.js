@@ -199,7 +199,44 @@ PennController("introductionanimals" ,
 	       newKey(" ")
         .wait()
 	       
-	      )	  	       
+	      )	
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newText ("<p> Now all the animals have left the stage.</p>")
+		,
+		newText ("<p> Let's look at the shadow, see what the baby dragon says and reward him. </p>")
+		,
+		newImage ("dogshadow.png")
+               .print ()
+		,
+		newText ("<p> Baby Dragon: It is certain that it is a dog.</p>")
+		,
+		newText ("<p> How will you reward the baby dragon? </p>")
+	       ,
+	       newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       // newKey("FJ")
+newSelector()
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"   )
+    .settings.log()
+    .wait()
+)
+.log( "ID" , getVar("ID") )
+		
+
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
