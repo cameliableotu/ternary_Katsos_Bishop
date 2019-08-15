@@ -596,19 +596,6 @@ PennController("experiment" ,
         .wait()
 	       
 	      )
-
-PennController("experiment" ,
-	    defaultText
-	        .print(),
-	       newText ("<p> Now the shadow is still there in the spotlight but the red dog has also come back on stage, joining the yellow dog.</p>")
-	         ,         
-	     newImage ("twodogs.png")
-               .print ()
-	       ,
-	       newKey(" ")
-        .wait()
-	       
-	      )
 PennController ("experiment",
 		defaultText
 	        .print(),
