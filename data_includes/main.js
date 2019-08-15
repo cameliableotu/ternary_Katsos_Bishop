@@ -120,9 +120,7 @@ PennController("trialbunny2" ,
 	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
 	       .print ( )
 	       ,
-	       newText ("<p> It is a bunny. </p>")
-	       ,
-	       newText ("<p> How will you reward the baby dragon? </p>")
+	       newText ("<p> Baby Dragon: It is a bunny. How will you reward the baby dragon? </p>")
 	       ,
 	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
@@ -203,9 +201,7 @@ PennController("introductionanimals" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now all the animals have left the stage.</p>")
-		,
-		newText ("<p> Let's look at the shadow, see what the baby dragon says and reward him. </p>")
+		newText ("<p> Now all the animals have left the stage. Let's look at the shadow, see what the baby dragon says and reward him.</p>")
 		,
 		newImage ("dogshadow.jpg")
                .print ()
