@@ -204,7 +204,7 @@ PennController ("experiment",
 		newImage ("dogshadow.jpg")
                .print ()
 		,
-		newAudio("barking", barking.mp3)
+		newAudio("barking", "barking.mp3")
 		.play()
 		,
 
