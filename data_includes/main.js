@@ -706,31 +706,7 @@ PennController("experiment" ,
 	       newKey(" ")
         .wait()
 	       
-	      )
-PennController ("experiment", PennController.Template( PennController.GetTable("frogstage1.csv") ,
-row => PennController( 
-newImage (“Testimage”, row.Testimage)
-.print ( ),
-	
-newText("Description", row.Description)
-	.print()
-	,
-
-newCanvas(450,200)
-   .settings.add( 0 , 0 , getImage("bigapple") )
-     .settings.add( 250 , 0 , getImage("smallapple") )
-        .print()
-	       ,
-	       // newKey("FJ")
-			
-newSelector()
-	    .settings.add( getImage("bigapple") , getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
-    .settings.log()
-   .wait()
-	))
-	.log( "ID" , getVar("ID") ))
-
+)
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
