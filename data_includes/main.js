@@ -364,6 +364,31 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+PennController("introductionstage2" ,
+	    defaultText
+	        .print(),
+	       newText ("<p> Very well. Yes, the shadow belongs to a dog indeed. It could be one of the three dogs you saw in the beginning.</p>")
+	                  
+	     newImage ("threedogs.png")
+               .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+	       
+	      )
+PennController("introductionstage2" ,
+	    defaultText
+	        .print(),
+	       newText ("<p> Now the shadow of the dog is still on but the yellow dog has come back on stage.</p>")
+	                  
+	     newImage ("yellowdog.png")
+               .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+	       
+	      )
+
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
