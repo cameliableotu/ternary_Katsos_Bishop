@@ -109,6 +109,7 @@ newSelector()
     .settings.log()
     .wait()
 )
+.log( "ID" , getVar("ID") )
 PennController("trialbunny2" ,
 	    defaultText
 	        .print()
@@ -143,6 +144,7 @@ newSelector()
     .settings.log()
     .wait()
 )
+.log( "ID" , getVar("ID") )
 PennController("introductionanimals" ,
 	    defaultText
 	        .print()
@@ -155,8 +157,13 @@ PennController("introductionanimals" ,
 	       ,
 	       newKey(" ")
         .wait()
-	      
-	      ,
+	      )
+
+PennController("introductionanimals" ,
+	    defaultText
+	        .print()
+	    ,
+	   
 	       newText ("<p> A group of three frogs. </p>")
 	    ,
 	                  
@@ -164,9 +171,13 @@ PennController("introductionanimals" ,
                .print ()
 	       ,
 	       newKey(" ")
-        .wait(),
+        .wait()
+	       )
 	       
-	newText ("<p> A group of three cats. </p>")
+PennController("introductionanimals" ,
+	    defaultText
+	        .print(),
+	       newText ("<p> A group of three cats. </p>")
 	    ,
 	                  
 	     newImage ("threecats.png")
@@ -176,7 +187,19 @@ PennController("introductionanimals" ,
         .wait()
 	       
 	      )
-	  	       
+PennController("introductionanimals" ,
+	    defaultText
+	        .print(),
+	       newText ("<p> and a group of three cows. </p>")
+	    ,
+	                  
+	     newImage ("threecows.png")
+               .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+	       
+	      )	  	       
 PennController.SendResults( "send" )
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
