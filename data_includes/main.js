@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.Sequence( "welcome", "details", "trial", "trialbunny", "trialbunny2", "experiment", "send" , "final" )
+PennController.Sequence( "welcome", "details", "trial", "trialbunny", "trialbunny2", "introductionanimals", "experiment", "send" , "final" )
 
 PennController( "welcome" ,
     defaultText
@@ -143,6 +143,39 @@ newSelector()
     .settings.log()
     .wait()
 )
+PennController("introductionanimals" ,
+	    defaultText
+	        .print()
+	    ,
+	    newText ("<p> Now let's get acquainted with the animals in the show. We have got a group of three dogs. </p>")
+	    ,
+	                  
+	     newImage ("threedogs.png")
+               .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+	      
+	      ,
+	       newText ("<p> A group of three frogs. </p>")
+	    ,
+	                  
+	     newImage ("threefrogs.png")
+               .print ()
+	       ,
+	       newKey(" ")
+        .wait(),
+	       
+	newText ("<p> A group of three cats. </p>")
+	    ,
+	                  
+	     newImage ("threecats.png")
+               .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+	       
+	      )
 	  	       
 PennController.SendResults( "send" )
 PennController( "final" ,
