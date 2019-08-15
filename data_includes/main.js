@@ -731,32 +731,6 @@ PennController("experiment" ,
 	       
 )
 ;
-PennController.Template (PennController.GetTable("frogstage1.csv") ,
-row => PennController("Description" ,
-       
-newImage (“Testimage”, row.Testimage)
-.print ( ),
-	
-newText("Description", row.Description)
-	.print()
-	,
-
-newCanvas(450,200)
-   .settings.add( 0 , 0 , getImage("bigapple") )
-     .settings.add( 250 , 0 , getImage("smallapple") )
-        .print()
-	       ,
-	       // newKey("FJ")
-			
-newSelector()
-	    .settings.add( getImage("bigapple") , getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
-    .settings.log()
-   .wait()
-	)
-			 );
-
-
 
 PennController.SendResults( "send" );
 PennController( "final" ,
@@ -768,6 +742,6 @@ PennController( "final" ,
     ,
     newButton("void")
         .wait()
-	       );
+	       )
 
   
