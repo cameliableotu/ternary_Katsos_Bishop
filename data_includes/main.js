@@ -714,6 +714,7 @@ newImage (“Testimage”, row.Testimage)
 	
 newText("Description", row.Description)
 	.print()
+	,
 
 newCanvas(450,200)
    .settings.add( 0 , 0 , getImage("bigapple") )
@@ -721,6 +722,7 @@ newCanvas(450,200)
         .print()
 	       ,
 	       // newKey("FJ")
+			
 newSelector()
 	    .settings.add( getImage("bigapple") , getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
