@@ -708,7 +708,7 @@ PennController("experiment" ,
 	       
 )
 PennController.Template (PennController.GetTable("frogstage1.csv") ,
-row => PennController( ( "Description" ,
+row => PennController("Description" ,
        
 newImage (“Testimage”, row.Testimage)
 .print ( ),
@@ -730,7 +730,9 @@ newSelector()
     .settings.log()
    .wait()
 	)
-	.log( "ID" , getVar("ID") )))
+			 )
+	.log( "ID" , getVar("ID") ));
+
 
 PennController.SendResults( "send" )
 PennController( "final" ,
