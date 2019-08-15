@@ -208,7 +208,7 @@ PennController ("experiment",
 		newText ("<p> Let's look at the shadow, see what the baby dragon says and reward him. </p>")
 		,
 		newImage ("dogshadow.jpg")
-		.settings.size(400,400)
+		.settings.size(595,334)
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is a dog.</p>")
