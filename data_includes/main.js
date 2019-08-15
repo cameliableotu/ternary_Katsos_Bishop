@@ -364,7 +364,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
-PennController("introductionstage2" ,
+PennController("experiment" ,
 	    defaultText
 	        .print(),
 	       newText ("<p> Very well. Yes, the shadow belongs to a dog indeed. It could be one of the three dogs you saw in the beginning.</p>")
@@ -376,7 +376,7 @@ PennController("introductionstage2" ,
         .wait()
 	       
 	      )
-PennController("introductionstage2" ,
+PennController("experiment" ,
 	    defaultText
 	        .print(),
 	       newText ("<p> Now the shadow of the dog is still on but the yellow dog has come back on stage.</p>")
