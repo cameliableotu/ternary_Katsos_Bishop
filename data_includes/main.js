@@ -730,7 +730,7 @@ newSelector()
     .settings.log()
    .wait()
 	)
-	.log( "ID" , getVar("ID") ))
+	.log( "ID" , getVar("ID") )))
 
 PennController.SendResults( "send" )
 PennController( "final" ,
