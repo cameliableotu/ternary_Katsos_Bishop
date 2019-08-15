@@ -1,6 +1,6 @@
-PennController.ResetPrefix(null)
+PennController.ResetPrefix(null);
 PennController.Sequence( "welcome", "details", "trial", "trialbunny", "trialbunny2", "introductionanimals", "experiment", "send" , "final" )
-
+;
 PennController( "welcome" ,
     defaultText
         .print()
@@ -22,7 +22,7 @@ PennController( "welcome" ,
         .settings.global()
         .set( getTextInput("ID") )
 )
-.log( "ID" , getVar("ID") )
+.log( "ID" , getVar("ID") );
 PennController("welcome" ,
 	    defaultText
 	        .print()
@@ -34,7 +34,7 @@ PennController("welcome" ,
                .print ()
 	       ,
 	       newKey(" ")
-        .wait())
+        .wait());
 PennController("details" ,
 	    defaultText
 	        .print()
@@ -60,7 +60,7 @@ newText ("<p> When he guesses the shadow correctly, you have to reward the baby 
 	       newKey(" ")
         .wait()
 )
-	    
+;	    
 PennController("trial" ,
 	    defaultText
 	        .print()
@@ -73,6 +73,7 @@ newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "
 	       newKey(" ")
         .wait()
 )
+;
 
 PennController("trialbunny" ,
 	    defaultText
@@ -108,6 +109,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController("trialbunny2" ,
 	    defaultText
 	        .print()
@@ -141,6 +143,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController("introductionanimals" ,
 	    defaultText
 	        .print()
@@ -154,6 +157,7 @@ PennController("introductionanimals" ,
 	       newKey(" ")
         .wait()
 	      )
+;
 
 PennController("introductionanimals" ,
 	    defaultText
@@ -169,7 +173,7 @@ PennController("introductionanimals" ,
 	       newKey(" ")
         .wait()
 	       )
-	       
+;       
 PennController("introductionanimals" ,
 	    defaultText
 	        .print(),
@@ -183,6 +187,7 @@ PennController("introductionanimals" ,
         .wait()
 	       
 	      )
+;
 PennController("introductionanimals" ,
 	    defaultText
 	        .print(),
@@ -196,6 +201,7 @@ PennController("introductionanimals" ,
         .wait()
 	       
 	      )	
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -231,6 +237,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 		
 PennController ("experiment",
 		defaultText
@@ -265,6 +272,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -298,6 +306,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -331,6 +340,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -364,6 +374,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -376,6 +387,7 @@ PennController("experiment" ,
         .wait()
 	       
 	      )
+;
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -388,6 +400,7 @@ PennController("experiment" ,
         .wait()
 	       
 	      )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -423,6 +436,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -455,6 +469,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -487,6 +502,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -519,6 +535,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -551,6 +568,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -583,6 +601,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 
 PennController("experiment" ,
 	    defaultText
@@ -596,6 +615,7 @@ PennController("experiment" ,
         .wait()
 	       
 	      )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -630,6 +650,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 
 PennController ("experiment",
 		defaultText
@@ -663,6 +684,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
@@ -695,6 +717,7 @@ newSelector()
     .wait()
 )
 .log( "ID" , getVar("ID") )
+;
 PennController("experiment" ,
 	    defaultText
 	        .print(),
@@ -707,6 +730,7 @@ PennController("experiment" ,
         .wait()
 	       
 )
+;
 PennController.Template (PennController.GetTable("frogstage1.csv") ,
 row => PennController("Description" ,
        
@@ -734,7 +758,7 @@ newSelector()
 
 
 
-PennController.SendResults( "send" )
+PennController.SendResults( "send" );
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
         .print()
