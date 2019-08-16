@@ -731,7 +731,7 @@ PennController("experiment" ,
 	       
 )
 ;
-PennController("introductionanimals" ,
+PennController("experiment" ,
 	    defaultText
 	        .print(),
 	       newText ("<p> Let's get acquainted with the group of frogs. </p>")
@@ -1014,7 +1014,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("froghadow.jpg")
+		newImage ("frogshadow.jpg")
                .print ()
 		,
 
