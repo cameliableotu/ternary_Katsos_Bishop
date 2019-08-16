@@ -1639,7 +1639,7 @@ PennController("experiment" ,
 	        .print(),
 	       newText ("<p> Look, it's not the blue cat. The blue cat has come back from behind the curtain, joining the green frog, but the shadow is still there.</p>")
 	         ,         
-	     newImage ("twocats.png")
+	     newImage ("twocats.jpg")
                .print ()
 	       ,
 	       newAudio("catsounds", "catsounds.mp3")
