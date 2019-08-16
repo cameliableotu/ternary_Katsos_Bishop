@@ -951,7 +951,7 @@ PennController ("experiment",
 		newImage ("frogshadow.jpg")
                .print ()
 		,
-		newAudio("barking", "barking.mp3")
+		newAudio("frogsounds", "frogsounds.mp3")
 		.play()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the red frog.</p>")
