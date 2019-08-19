@@ -22,7 +22,7 @@ PennController( "welcome" ,
 	       newTextInput ("Gender")
         .print()
 	       , 
-	        newText("What is your profession?"),
+	        newText("<p> What is your profession?</p>"),
 	    newTextInput ("Profession")  
         .print()
 	       ,
