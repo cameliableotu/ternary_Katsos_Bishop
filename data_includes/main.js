@@ -578,7 +578,7 @@ PennController("experiment" ,
 	        .print(),
 	       newText ("<p> Now the shadow is still there in the spotlight but the red dog has also come back on stage, joining the yellow dog.</p>")
 	         ,         
-	     newImage ("twodogs.png")
+	     newImage ("twodogs1.png")
                .print ()
 	       ,
 	       	newAudio("barking", "barking.mp3")
@@ -1912,7 +1912,7 @@ PennController("experiment" ,
 	        .print(),
 	       newText ("<p> Very well. Yes, the shadow belongs to a cow indeed. It could be one of the three cows you saw in the beginning.</p>")
 	         ,         
-	     newImage ("threecows.png")
+	     newImage ("threecows1.png")
                .print ()
 	       ,
 	       newKey(" ")
