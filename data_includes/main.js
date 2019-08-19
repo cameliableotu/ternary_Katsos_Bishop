@@ -82,6 +82,9 @@ newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "
 	       newImage ("smallpinkbunny", "smallpinkbunny.png")
 	       .print ()
 	       ,
+	       newAudio("bunnysounds", "bunnysounds.mp3")
+		.play()
+	       ,
 	       newKey(" ")
         .wait()
 )
@@ -97,6 +100,9 @@ PennController("trialbunny" ,
 	      
 	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
 	       .print ( )
+	       ,
+	       newAudio("bunnysounds", "bunnysounds.mp3")
+		.play()
 	       ,
 	       newText ("<p> Baby Dragon: It is a cow. How will you reward the baby dragon? </p>")
 	       ,
