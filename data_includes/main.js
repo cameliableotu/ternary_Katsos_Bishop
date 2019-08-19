@@ -185,7 +185,7 @@ PennController("introductionanimals" ,
 	     newImage ("threefrogs.png")
                .print ()
 	       ,
-	       newAudio("frogsoundsshort", "frogsoundsshort.mp3")
+	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 	       ,
 	       newKey(" ")
@@ -218,7 +218,7 @@ PennController("introductionanimals" ,
 	     newImage ("threecows1.png")
                .print ()
 	       ,
-	       newAudio("cowsounds", "cowsounds.mp3")
+	       newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 	       ,
 	       newKey(" ")
@@ -711,7 +711,7 @@ PennController("experiment" ,
 	     newImage ("threefrogs.png")
                .print ()
 	       ,
-	       newAudio("frogsoundsshort", "frogsoundsshort.mp3")
+	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
 	        newText ("<p> Now they all go behind the curtain. </p>") 
@@ -729,7 +729,7 @@ PennController ("experiment",
 		newImage ("frogshadow.jpg")
                .print ()
 		,
-		newAudio("frogsoundsshort", "frogsoundsshort.mp3")
+		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
 
@@ -872,7 +872,7 @@ PennController("experiment" ,
 	     newImage ("bluefrog.png")
                .print ()
 	       ,
-	       newAudio("frogsoundsshort", "frogsoundsshort.mp3")
+	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play(),
 	       
 	       newKey(" ")
@@ -1091,7 +1091,7 @@ PennController ("experiment",
 		newImage ("frogshadow.jpg")
                .print ()
 		,
-		newAudio("frogsoundsshort", "frogsoundsshort.mp3")
+		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
 		newText ("<p> Now let's see what the baby dragon has to say about the shadow and reward him. </p>")
@@ -1221,7 +1221,7 @@ PennController("experiment" ,
 	     newImage ("redfrogrevealedonstage.jpg")
                .print ()
 	       ,
-	       newAudio("frogsoundsshort", "frogsoundsshort.mp3")
+	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play(),
 	       
 	       newKey(" ")
