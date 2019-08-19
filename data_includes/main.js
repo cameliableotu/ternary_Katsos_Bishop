@@ -5,11 +5,10 @@ PennController( "welcome" ,
     defaultText
         .print()
     ,
-    newText("<p> Hey everyone! </p>")
+    newText("<p> Hey everyone! </p>").unfold
     ,
-    newText("<p> Hey, everyone, we are going to play a really fun and nice game together with a wizard and baby dragon and some really cool shadows belonging to some animals.</p>")
-    ,
-    newText("<p>Please enter your ID, answer some questions and then click the button below to start the experiment.</p>")
+    newText("<p> Hey, everyone, we are going to play a really fun and nice game together with a wizard and baby dragon and some really cool shadows belonging to some animals.</p>").unfold    ,
+    newText("<p>Please enter your ID, answer some questions and then click the button below to start the experiment.</p>").unfold
     ,
     newTextInput("ID")
         .print()
