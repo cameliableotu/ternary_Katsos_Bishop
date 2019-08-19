@@ -14,46 +14,21 @@ PennController( "welcome" ,
     newTextInput("ID")
         .print()
     ,
+    newTextInput("What is your age?")
+        .print(),
+	  newTextInput("What is your gender?")
+        .print(), 
+	        newTextInput("What is your profession?")
+        .print(),
+	       
     newButton("Start")
         .print()
         .wait()
     ,
     newVar("ID")
         .settings.global()
-        .set( getTextInput("ID"))
-	       ,
-newTextInput("What is your age?")
-        .print()
-    ,
-    newButton("Start")
-        .print()
-        .wait()
-    ,
-    newVar("Age")
-        .settings.global()
-        .set( getTextInput("Age"))
-	      ,
-	      newTextInput("What is your gender?")
-        .print()
-    ,
-    newButton("Start")
-        .print()
-        .wait()
-    ,
-    newVar("Gender")
-        .settings.global()
-        .set( getTextInput("Gender"))
-	       ,
-	    newTextInput("What is your profession?")
-        .print()
-    ,
-    newButton("Start")
-        .print()
-        .wait()
-    ,
-    newVar("Profession")
-        .settings.global()
-        .set( getTextInput("Profession")))   
+        .set( getTextInput("ID")))
+	      
 .log( "ID" , getVar("ID") );
 PennController("welcome" ,
 	    defaultText
