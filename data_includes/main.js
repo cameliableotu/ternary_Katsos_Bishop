@@ -14,11 +14,15 @@ PennController( "welcome" ,
     newTextInput("ID")
         .print()
     ,
-    newTextInput("What is your age?")
+     newText("<p> What is your age? </p>"),
+    newTextInput("Age")
         .print(),
-	  newTextInput("What is your gender?")
+	  newText("<p> What is your gender?</p>"),
+	       newTextInput ("Gender")
         .print(), 
-	        newTextInput("What is your profession?")
+	        newText("What is your profession?"),
+	    newTextInput ("Profession")
+        .print()   
         .print(),
 	       
     newButton("Start")
