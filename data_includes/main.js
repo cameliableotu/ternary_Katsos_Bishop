@@ -9,7 +9,7 @@ PennController( "welcome" ,
     ,
     newText("<p> Hey, everyone, we are going to play a really fun and nice game together with a wizard and baby dragon and some really cool shadows belonging to some animals.</p>")
     ,
-    newText("<p>Please enter your ID and then click the button below to start the experiment.</p>")
+    newText("<p>Please enter your ID, answer some questions and then click the button below to start the experiment.</p>")
     ,
     newTextInput("ID")
         .print()
@@ -20,8 +20,40 @@ PennController( "welcome" ,
     ,
     newVar("ID")
         .settings.global()
-        .set( getTextInput("ID") )
-)
+        .set( getTextInput("ID"))
+	       ,
+newTextInput("What is your age?")
+        .print()
+    ,
+    newButton("Start")
+        .print()
+        .wait()
+    ,
+    newVar("Age")
+        .settings.global()
+        .set( getTextInput("Age"))
+	      ,
+	      newTextInput("What is your gender?")
+        .print()
+    ,
+    newButton("Start")
+        .print()
+        .wait()
+    ,
+    newVar("Gender")
+        .settings.global()
+        .set( getTextInput("Gender"))
+	       ,
+	    newTextInput("What is your profession?")
+        .print()
+    ,
+    newButton("Start")
+        .print()
+        .wait()
+    ,
+    newVar("Profession")
+        .settings.global()
+        .set( getTextInput("Profession")))   
 .log( "ID" , getVar("ID") );
 PennController("welcome" ,
 	    defaultText
