@@ -166,6 +166,9 @@ PennController("introductionanimals" ,
 	     newImage ("threedogs.png")
                .print ()
 	       ,
+	       newAudio("barking", "barking.mp3")
+		.play()
+	       ,
 	       newKey(" ")
         .wait()
 	      )
@@ -182,6 +185,9 @@ PennController("introductionanimals" ,
 	     newImage ("threefrogs.png")
                .print ()
 	       ,
+	       newAudio("frogsounds", "frogsounds.mp3")
+		.play()
+	       ,
 	       newKey(" ")
         .wait()
 	       )
@@ -194,6 +200,9 @@ PennController("introductionanimals" ,
 	                  
 	     newImage ("threecats.png")
                .print ()
+	       ,
+	       newAudio("catsounds", "catsounds.mp3")
+		.play()
 	       ,
 	       newKey(" ")
         .wait()
@@ -208,6 +217,9 @@ PennController("introductionanimals" ,
 	                  
 	     newImage ("threecows.png")
                .print ()
+	       ,
+	       newAudio("cowsounds", "cowsounds.mp3")
+		.play()
 	       ,
 	       newKey(" ")
         .wait()
