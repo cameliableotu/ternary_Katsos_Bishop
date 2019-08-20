@@ -56,7 +56,7 @@ newText ("<p> Now Merlin is playing the shadow game with a really cute baby drag
 	,
 newText ("<p> When he guesses the shadow correctly, you have to reward the baby dragon with a big apple, and when he guesses the shadow wrong, you'll just give him a tiny apple.  </p>")
 ,
-	          n newImage("bigapple", "bigapple.png")
+	           newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
@@ -110,23 +110,18 @@ PennController("trialbunny" ,
         .settings.size(200,200)
         // .print()
     ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
-    ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
@@ -150,24 +145,19 @@ PennController("trialbunny2" ,
         .settings.size(200,200)
         // .print()
     ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
-    ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJK")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J" ,   "K")
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
     .settings.log()
     .wait()
 )
@@ -274,7 +264,7 @@ PennController ("experiment",
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
+    .settings.add( getImage("bigapple"), getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
@@ -307,8 +297,8 @@ PennController ("experiment",
 	       ,
 	       // newKey("FJK")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J",        "K"  )
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J"  )
     .settings.log()
     .wait()
 )
@@ -339,7 +329,7 @@ PennController ("experiment",
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
@@ -371,7 +361,7 @@ PennController ("experiment",
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
+    .settings.add( getImage("bigapple"), getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
@@ -438,7 +428,7 @@ PennController ("experiment",
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
+    .settings.add( getImage("bigapple") , getImage("smallapple") )
     .settings.keys(          "F"    ,          "J"   )
     .settings.log()
     .wait()
