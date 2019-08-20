@@ -2333,7 +2333,6 @@ newSelector()
     .settings.log()
     .wait()
 )
-)
 .log( "ID" , getVar("ID") )
 ;
 PennController ("experiment",
