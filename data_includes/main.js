@@ -111,23 +111,24 @@ PennController("trialbunny" ,
 	       ,
 	       newText ("<p> Baby Dragon: It is a cow. How will you reward the baby dragon? </p>")
 	       ,
-	      newImage("bigapple", "bigapple.png")
+	      ewImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newImage("smallapple", "smallapple.png")
+	          newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(450,200)
-        .settings.add( 0 , 0 , getImage("bigapple") )
-        .settings.add( 250 , 0 , getImage("smallapple") )
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJ")
 newSelector()
-    .settings.add( getImage("bigapple") , getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
     .settings.log()
     .wait()
 )
