@@ -70,7 +70,7 @@ newText ("<p> When he guesses the shadow correctly, you have to reward the baby 
     ,
     newCanvas(700,200)
         .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigpple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
