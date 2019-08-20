@@ -169,10 +169,10 @@ PennController("trialbunny2" ,
         .settings.add( 500 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	       // newKey("FJ")
+	       // newKey("FJK")
 newSelector()
     .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
+    .settings.keys(          "F"    ,          "J" ,   "K")
     .settings.log()
     .wait()
 )
@@ -264,22 +264,17 @@ PennController ("experiment",
 
 		newText ("<p> Baby Dragon: It is certain that it is a dog. </p>")
 	       ,
-	       newImage("bigapple", "bigapple.png")
+	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
-    ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
     ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJ")
@@ -302,28 +297,23 @@ PennController ("experiment",
 	
 		newText ("<p> Baby Dragon: It is possible that it is a cat. </p>")
 	       ,
-	      newImage("bigapple", "bigapple.png")
+	     newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
-    ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
     ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
-	       // newKey("FJ")
+	       // newKey("FJK")
 newSelector()
     .settings.add( getImage("bigapple") , getImage (“mediumapple”), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J"   )
+    .settings.keys(          "F"    ,          "J",        "K"  )
     .settings.log()
     .wait()
 )
@@ -343,22 +333,13 @@ PennController ("experiment",
         .settings.size(200,200)
         // .print()
     ,
-   newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
-    ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJ")
@@ -384,18 +365,13 @@ PennController ("experiment",
         .settings.size(200,200)
         // .print()
     ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
-    ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJ")
@@ -456,18 +432,13 @@ PennController ("experiment",
         .settings.size(200,200)
         // .print()
     ,
-	       newImage("mediumapple", "mediumapple.png")
-        .settings.size(200,200)
-	       // .print()
-    ,
     newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(700,200)
+    newCanvas(450,200)
         .settings.add( 0 , 0 , getImage("bigapple") )
-         .settings.add(250 , 0 , getImage("mediumapple") )
-        .settings.add( 500 , 0 , getImage("smallapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       // newKey("FJ")
@@ -488,7 +459,7 @@ PennController ("experiment",
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
 		,
-	       newImage("bigapple", "bigapple.png")
+	        newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
