@@ -111,6 +111,10 @@ PennController("trialbunny" ,
 	       ,
 	       newText ("<p> Baby Dragon: It is a cow. How will you reward the baby dragon? </p>")
 	       ,
+	       newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
 	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
