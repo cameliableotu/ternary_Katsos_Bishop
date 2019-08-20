@@ -56,11 +56,11 @@ newText ("<p> Now Merlin is playing the shadow game with a really cute baby drag
 	,
 newText ("<p> When he guesses the shadow correctly, you have to reward the baby dragon with a huge apple, when his guess is so so, you have to give him a big apple, and  when he guesses the shadow wrong, you'll just give him a small apple.  </p>")
 ,
-	           newImage("hugeapple", "bigapple.png")
+	   newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	       newImage("bigapple", "mediumapple.png")
+	       newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
@@ -69,8 +69,8 @@ newText ("<p> When he guesses the shadow correctly, you have to reward the baby 
         // .print()
     ,
     newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("bigapple") )
-        .settings.add( 250 , 0 , getImage("mediumapple") )
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigpple") )
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
