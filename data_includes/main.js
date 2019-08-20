@@ -186,7 +186,7 @@ PennController("introductionanimals" ,
 	    newText ("<p> Now let's get acquainted with the animals in the show. We have got a group of three dogs. </p>")
 	    ,
 	                  
-	     newImage ("threedogs1.png")
+	     newImage ("threedogs.png")
                .print ()
 	       ,
 	       newAudio("barking", "barking.mp3")
@@ -238,7 +238,7 @@ PennController("introductionanimals" ,
 	       newText ("<p> and a group of three cows. </p>")
 	    ,
 	                  
-	     newImage ("threecows1.png")
+	     newImage ("threecows.png")
                .print ()
 	       ,
 	       newAudio("cowsounds2sec", "cowsounds2sec.mp3")
@@ -408,7 +408,7 @@ PennController("experiment" ,
 	        .print(),
 	       newText ("<p> Very well. Yes, the shadow belongs to a dog indeed. It could be one of the three dogs you saw in the beginning.</p>")
 	         ,         
-	     newImage ("threedogs1.png")
+	     newImage ("threedogs.png")
                .print ()
 	       ,
 	       newKey(" ")
@@ -421,7 +421,7 @@ PennController("experiment" ,
 	        .print(),
 	       newText ("<p> Now the shadow of the dog is still on but the yellow dog has come back on stage.</p>")
 	          ,        
-	     newImage ("yellowdog1.png")
+	     newImage ("yellowdog.png")
                .print ()
 	       ,
 	       	newAudio("barking", "barking.mp3")
@@ -655,7 +655,7 @@ PennController("experiment" ,
 	        .print(),
 	       newText ("<p> Now the shadow is still there in the spotlight but the red dog has also come back on stage, joining the yellow dog.</p>")
 	         ,         
-	     newImage ("twodogs1.png")
+	     newImage ("twodogs.png")
                .print ()
 	       ,
 	       	newAudio("barking", "barking.mp3")
