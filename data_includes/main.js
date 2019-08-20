@@ -111,7 +111,7 @@ PennController("trialbunny" ,
 	       ,
 	       newText ("<p> Baby Dragon: It is a cow. How will you reward the baby dragon? </p>")
 	       ,
-	      ewImage("bigapple", "bigapple.png")
+	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
@@ -125,7 +125,7 @@ PennController("trialbunny" ,
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
-	       // newKey("FJ")
+	    
 newSelector()
     .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
     .settings.keys(          "F"    ,          "J")
