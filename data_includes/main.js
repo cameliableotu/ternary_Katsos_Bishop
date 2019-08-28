@@ -56,7 +56,10 @@ PennController("details" ,
 	       ,
 newText ("<p> Now Merlin is playing the shadow game with a really cute baby dragon, who has to guess whose animal the shadow belongs to.</p>")
 	,
-newText ("<p> When he guesses the shadow correctly, you have to reward the baby dragon with a huge apple, when his guess is so so, you have to give him a big apple, and  when he guesses the shadow wrong, you'll just give him a small apple.  </p>")
+newText ("<p> To help the baby dragon, alongside the shadow, you will see all the animals in the game on the side, as well as the animals which are on stage. </p>")
+,
+ newText ("<p> If there are no animals on stage, there will be a line instead. </p>")
+newText ("<p> When the babydragon guesses the shadow correctly, you have to reward the baby dragon with a huge apple, when his guess is so so, you have to give him a big apple, and  when he guesses the shadow wrong, you'll just give him a small apple.  </p>")
 ,
 	   newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
@@ -105,7 +108,7 @@ PennController("trialbunny" ,
 	       newText 
 	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. To reward the dragon, just click on the apple you want to give him.</p>"),
 	      
-	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
+	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
 	       .print ( )
 	       ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
@@ -150,7 +153,7 @@ PennController("trialbunny2" ,
 	       ,
 	       
 	      
-	       newImage ("bunnyshadow2", "bunnyshadow2.jpg")
+	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
 	       .print ( )
 	       ,
 	       newText ("<p> Baby Dragon: It is a bunny.</p>")
@@ -260,7 +263,7 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> Now all the animals have left the stage. Let's look at the shadow, see what the baby dragon says and reward him.</p>")
 		,
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowalldogs","dogshadowalldogs.png")
                .print ()
 		,
 		newAudio("barking", "barking.mp3")
@@ -300,7 +303,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowalldogs", "dogshadowalldogs.png")
                .print ()
 		,
 	
@@ -339,7 +342,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowalldogs","dogshadowalldogs.png")
                .print ()
 		,
 
@@ -378,7 +381,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowalldogs", "dogshadowalldogs.png")
                .print ()
 		,
 
@@ -447,7 +450,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowonedogonstage","dogshadowonedogonstage.png")
                .print ()
 		,
 		newAudio("barking", "barking.mp3")
@@ -489,7 +492,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
@@ -526,7 +529,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the yellow dog.</p>")
@@ -563,7 +566,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the yellow dog.</p>")
@@ -600,7 +603,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
@@ -637,7 +640,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
@@ -691,7 +694,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
 		newAudio("barking", "barking.mp3")
@@ -699,9 +702,49 @@ PennController ("experiment",
 		,
 		newText ("<p> Now let's see what the baby dragon has to say about the shadow and reward him. </p>")
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue cat.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
 		,
 	       newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	    
+newSelector()
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
+    .settings.log()
+    .wait()
+)
+.log( "ID" , getVar("ID") )
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
+               .print ()
+		,
+		newAudio("barking", "barking.mp3")
+		.play()
+		,
+		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
+		,
+		newText ("<p> How will you reward the baby dragon? </p>")
+		,
+		newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
         // .print()
 	       ,
@@ -732,10 +775,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-	
 		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -770,10 +812,10 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadow.jpg")
+		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the blue cat.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the red dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -844,7 +886,7 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> Let's take a look at the shadow, and reward him for what he says.</p>")
 		,
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
                .print ()
 		,
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
@@ -886,10 +928,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is certain that it is a frog. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -924,7 +965,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is a dog. </p>")
@@ -961,10 +1002,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is possible that it is a frog. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -1029,7 +1069,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
 		newAudio("frogsoundsshort", "frogsoundsshort.mp3")
@@ -1070,7 +1110,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the red frog.</p>")
@@ -1107,7 +1147,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the blue frog.</p>")
@@ -1144,7 +1184,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
 
@@ -1182,9 +1222,8 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
-	
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the red frog.</p>")
 		,
@@ -1220,7 +1259,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the blue frog.</p>")
@@ -1274,7 +1313,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
 		,
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
@@ -1282,7 +1321,7 @@ PennController ("experiment",
 		,
 		newText ("<p> Now let's see what the baby dragon has to say about the shadow and reward him. </p>")
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the red cat.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the purple frog.</p>")
 		,
 	       newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
@@ -1319,7 +1358,7 @@ PennController ("experiment",
                .print ()
 		,
 
-		newText ("<p> Baby Dragon: It is certain that it is the red cat.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the purple frog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1465,7 +1504,7 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> Let's take a look at the shadow, and reward him for what he says.</p>")
 		,
-		newImage ("catshadow.jpg")
+		newImage ("catshadowallcats","catshadowallcats.png")
                .print ()
 		,
 		newAudio("catsounds", "catsounds.mp3")
@@ -1505,10 +1544,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowallcats","catshadowallcats.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is certain that it is a cat. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -1543,7 +1581,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowallcats","catshadowallcats.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is a dog. </p>")
@@ -1580,10 +1618,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowallcats","catshadowallcats.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is possible that it is a cat. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -1648,7 +1685,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
 		,
 		newAudio("catsounds", "catsounds.mp3")
@@ -1689,10 +1726,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
 		,
-	
 		newText ("<p> Baby Dragon: It is possible that it is the green cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -1727,7 +1763,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the pink cat.</p>")
@@ -1764,10 +1800,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is possible that it is the pink cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -1802,9 +1837,8 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+       newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
-	
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the blue cat.</p>")
 		,
@@ -1840,7 +1874,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the green cat.</p>")
@@ -1894,7 +1928,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
 		newAudio("catsounds", "catsounds.mp3")
@@ -1935,11 +1969,10 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
-
-		newText ("<p> Baby Dragon: It is possible that it is the pink bunny.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the blue cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1973,7 +2006,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the pink cat.</p>")
@@ -2010,11 +2043,10 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("catshadow.jpg")
+		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
-		
-		newText ("<p> Baby Dragon: It is certain that it is the pink bunny. </p>")
+		newText ("<p> Baby Dragon: It is certain that it is the blue cat. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2086,7 +2118,7 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> Let's take a look at the shadow, and reward him for what he says.</p>")
 		,
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowallcows","cowshadowallcows.png")
                .print ()
 		,
 		newAudio("cowsounds", "cowsounds.mp3")
@@ -2128,7 +2160,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowallcows","cowshadowallcows.png")
                .print ()
 		,
 
@@ -2166,7 +2198,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowallcows","cowshadowallcows.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is a cow. </p>")
@@ -2203,10 +2235,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowallcows","cowshadowallcows.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is possible that it is a cat. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -2271,7 +2302,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
 		newAudio("cowsounds", "cowsounds.mp3")
@@ -2312,7 +2343,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the yellow cow.</p>")
@@ -2349,7 +2380,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the orange cow.</p>")
@@ -2386,10 +2417,9 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
-
 		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -2424,9 +2454,8 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
-	
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the yellow cow.</p>")
 		,
@@ -2462,7 +2491,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the orange cow.</p>")
@@ -2516,7 +2545,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
 		newAudio("cowsounds", "cowsounds.mp3")
@@ -2557,11 +2586,10 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-
-		newText ("<p> Baby Dragon: It is certain that it is the green cat.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the yellow cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2595,7 +2623,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the green cow.</p>")
@@ -2632,11 +2660,11 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("cowshadow.jpg")
+		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
 		
-		newText ("<p> Baby Dragon: It is possible that it is the green cat. </p>")
+		newText ("<p> Baby Dragon: It is possible that it is the yellow cow. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
