@@ -493,7 +493,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
@@ -530,7 +530,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the yellow dog.</p>")
@@ -567,7 +567,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the yellow dog.</p>")
@@ -604,7 +604,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
@@ -641,7 +641,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("dogshadowonedogonstage, "dogshadowonedogonstage.png")
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
