@@ -850,7 +850,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now let's see who the shadow belongs to.Pam-pam! It's the blue dog! </p>")
+	       newText ("<p> Now let's see who the shadow belongs to. Pam-pam! It's the blue dog! </p>")
 	         ,         
 	     newImage ("bluedogonstage.jpg")
                .print ()
@@ -2081,7 +2081,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now let's see who the shadow belongs to.Pam-pam! It's the pink cat! </p>")
+	       newText ("<p> Now let's see who the shadow belongs to. Pam-pam! It's the pink cat! </p>")
 	         ,         
 	     newImage ("pinkcatrevealedonstage.jpg")
                .print ()
@@ -2699,7 +2699,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now let's see who the shadow belongs to.Pam-pam! It's the green cow! </p>")
+	       newText ("<p> Now let's see who the shadow belongs to. Pam-pam! It's the green cow! </p>")
 	         ,         
 	     newImage ("greencowrevealedonstage.jpg")
                .print ()
