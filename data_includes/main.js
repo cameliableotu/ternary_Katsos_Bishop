@@ -60,7 +60,7 @@ newText ("<p> To help the baby dragon, alongside the shadow, you will see all th
 ,
  newText ("<p> If there are no animals on stage, there will be a line instead. </p>")
 	       ,
-newText ("<p> When the babydragon guesses the shadow correctly, you have to reward the baby dragon with a huge apple, when his guess is so so, you will give him a big apple, and  when he guesses the shadow wrongly, you'll just give him a small apple.  </p>")
+newText ("<p> When the babydragon guesses the shadow correctly, you have to reward the baby dragon with a huge apple, when his guess is so so (between good and bad), you will give him a big apple, and  when he guesses the shadow wrongly, you'll just give him a small apple.  </p>")
 ,
 	   newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
