@@ -55,36 +55,42 @@ PennController("details" ,
 	        .print()
 	    
 	       ,
-newText ("<p> Now Merlin is playing the shadow game with a really cute baby dragon, who has to guess whose animal the shadow belongs to.</p>")
+newText ("<p> Now Merlin is playing the shadow game with a really cute baby dragon, who has to guess whose animal the shadow belongs to. </p>")
 	,
-newText ("<p> To help the baby dragon, alongside the shadow, he will see all the animals in the game on the side, as well as the animals which are on stage. </p>")
+  newText ("<p> To help the baby dragon, alongside the shadow, he will see all the animals in the game on the side, as well as the animals which are on stage. </p>")
 ,
  newText ("<p> If there are no animals on stage, there will be a line instead. </p>")
 	       ,
-newText ("<p> When the babydragon guesses the shadow correctly, you have to reward the baby dragon with a huge apple, when his guess is so so (between good and bad), you will give him a big apple, and  when he guesses the shadow wrongly, you'll just give him a small apple.  </p>")
+ newText ("<p> For instance, in the image below, there are three cats, and none of them is on stage. They all went behind the curtain, but the shadow belongs to only one of them. </p>"),
+	  newImage ("catshadowallcats", "catshadowallcats.png")
+	.print (),
+	 newKey(" ")
+        .wait())
+
+;
+PennController("details" ,
+	    defaultText
+	        .print()
+	       ,
+  newText ("<p> When the baby dragon guesses the shadow correctly, you have to reward the baby dragon with a big apple, and when he guesses the shadow wrongly, you'll just give him a tiny apple.  </p>")
 ,
-	   newImage("hugeapple", "hugeapple.png")
+	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	       newImage("bigapple", "bigapple.png")
+    newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
+    newCanvas(450,200)
+        .settings.add( 0 , 0 , getImage("bigapple") )
+        .settings.add( 250 , 0 , getImage("smallapple") )
         .print()
 	       ,
 	       newKey(" ")
         .wait()
 )
-;
+;	    
 PennController("trial" ,
 	    defaultText
 	        .print()
@@ -2715,17 +2721,18 @@ PennController("experiment" ,
 ;
 PennController.SendResults( "send" );
 PennController( "final" ,
-    newText("<p> The baby dragon thanks you for the apples, and so does the wizard! Bubbye! :) Thank you for your participation!</p>")
-        .print()
+	       newText ("<p> Thank you for your participation! The survey code for MTurk is: yx79c2. Please copy-paste it to MTurk. </p>")
+	       .print()
 	       ,
-	newImage ("dragon.png")
-     .print ()
-    ,
-    newText("<p><a href='https://www.put.your/platform/confirmation/link.here'>Click here to validate your participation.</a></p>")
+	 newText("<p> The baby dragon thanks you for the apples, and so does the wizard! Bubbye! </p>")
+        .print(),
+	       newText("<p><a href='https://www.put.your/platform/confirmation/link.here'> Click here to validate your participation.</a></p>")
         .print()
     ,
     newButton("void")
         .wait()
 	       )
+;
+  
 
   
