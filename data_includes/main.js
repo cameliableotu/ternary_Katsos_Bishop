@@ -1,6 +1,6 @@
 PennController.DebugOff();
 PennController.ResetPrefix(null);
-PennController.Sequence( "welcome", "details", "trial", "trialbunny", "trialbunny2", "introductionanimals", "experiment", "send" , "final" )
+PennController.Sequence( "welcome", "details", "trial","trial2", "trialbunny", "trialbunny2", "introductionanimals", "experiment", "send" , "final" )
 ;
 PennController( "welcome" ,
     defaultText
