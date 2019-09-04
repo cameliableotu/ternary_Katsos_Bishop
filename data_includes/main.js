@@ -57,7 +57,7 @@ PennController("details" ,
 	       ,
 newText ("<p> Now Merlin is playing the shadow game with a really cute baby dragon, who has to guess whose animal the shadow belongs to. </p>")
 	,
-  newText ("<p> Aalongside the shadow, the image will show all the animals in the game on the side, as well as the animals which are in front of the curtain. </p>")
+  newText ("<p> Alongside the shadow, the image will show all the animals in the game on the side, as well as the animals which are in front of the curtain. </p>")
 ,
  newText ("<p> If there are no animals on stage, there will be a line instead. </p>")
 	       ,
@@ -77,17 +77,22 @@ PennController("details" ,
    newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
    newText ("<p> If it's a good description, but not the best description, you'll give him a big apple.  </p>"),
   newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
-  newImage("bigapple", "bigapple.png")
+   newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newImage("smallapple", "smallapple.png")
+	          newImage("smallapple", "smallapple.png")
         .settings.size(200,200)
         // .print()
     ,
-    newCanvas(450,200)
-        .settings.add( 0 , 0 , getImage("bigapple") )
-        .settings.add( 250 , 0 , getImage("smallapple") )
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
 	       newKey(" ")
