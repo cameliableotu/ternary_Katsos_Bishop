@@ -57,11 +57,11 @@ PennController("details" ,
 	       ,
 newText ("<p> Now Merlin is playing the shadow game with a really cute baby dragon, who has to guess whose animal the shadow belongs to. </p>")
 	,
-  newText ("<p> To help the baby dragon, alongside the shadow, he will see all the animals in the game on the side, as well as the animals which are on stage. </p>")
+  newText ("<p> Aalongside the shadow, the image will show all the animals in the game on the side, as well as the animals which are in front of the curtain. </p>")
 ,
  newText ("<p> If there are no animals on stage, there will be a line instead. </p>")
 	       ,
- newText ("<p> For instance, in the image below, there are three cats, and none of them is on stage. They all went behind the curtain, but the shadow belongs to only one of them. </p>"),
+ newText ("<p> For instance, in the image below, there are three cats, and none of them is in front of the curtain. They all went behind the curtain, but the shadow belongs to only one of them. </p>"),
 	  newImage ("catshadowallcats", "catshadowallcats.png")
 	.print (),
 	 newKey(" ")
@@ -72,9 +72,12 @@ PennController("details" ,
 	    defaultText
 	        .print()
 	       ,
-  newText ("<p> When the baby dragon guesses the shadow correctly, you have to reward the baby dragon with a big apple, and when he guesses the shadow wrongly, you'll just give him a tiny apple.  </p>")
-,
-	      newImage("bigapple", "bigapple.png")
+  newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
+	       ,
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
+   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple.  </p>"),
+  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
+  newImage("bigapple", "bigapple.png")
         .settings.size(200,200)
         // .print()
     ,
@@ -96,7 +99,7 @@ PennController("trial" ,
 	        .print()
 	    
 	       ,
-newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "),
+            newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "),
 	       newImage ("smallpinkbunny", "smallpinkbunny.png")
 	       .print ()
 	       ,
@@ -107,6 +110,53 @@ newText ("<p> Now let's see how you manage. Let's meet a very cute bunny. </p> "
         .wait()
 )
 ;
+PennController("trial2" ,
+	    defaultText
+	        .print()
+	    
+	       ,
+	       newText 
+	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. </p>"),
+	      
+	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
+	       .print ( )
+	       ,
+	       newAudio("bunnysounds", "bunnysounds.mp3")
+		.play()
+	       ,
+	       newText ("<p> The baby dragon says: It is a mouse. </p>")
+	       ,
+	       newText ("<p> The baby dragon guessed incorrectly. The shadow does not belong to a mouse, but to a bunny. </p>"),
+	       newText ("<p> Because of this, you will give the baby dragon a small apple, not a big apple or a huge apple. </p>"),
+	       newText ("<p> To reward the dragon, you will click on the apple which is his reward, in this case, the small apple.</p>"),
+	        newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	    
+newSelector()
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
+    .settings.log()
+    .wait()
+)
+
+.log( "ID" , getVar("ID") )
+;
 
 PennController("trialbunny" ,
 	    defaultText
@@ -114,7 +164,7 @@ PennController("trialbunny" ,
 	    
 	       ,
 	       newText 
-	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. To reward the dragon, just click on the apple you want to give him.</p>"),
+	       ("<p> Now let's see how you manage on your own. The baby dragon sees the following shadow. To reward the dragon, just click on the apple you want to give him.</p>"),
 	      
 	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
 	       .print ( )
@@ -442,7 +492,7 @@ PennController("experiment" ,
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now the shadow of the dog is still there but the yellow dog has come back on stage.</p>")
+	       newText ("<p> Look, it isn't the yellow dog! The yellow dog has come back in front of the curtain, but the shadow is still there in the spotlight.</p>")
 	          ,        
 	     newImage ("yellowdog.png")
                .print ()
@@ -686,8 +736,10 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now the shadow is still there in the spotlight but the red dog has also come back on stage, joining the yellow dog.</p>")
-	         ,         
+	       newText ("<p> Look, it isn't the red dog! The red dog has just come back in front of the curtain, joining the yellow dog. </p>")
+	         ,      
+	       newText ("<p> But the shadow is still there in the spotlight. </p>")
+	       ,
 	     newImage ("twodogs.png")
                .print ()
 	       ,
@@ -1061,7 +1113,7 @@ PennController("experiment" ,
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now the shadow of the frog is still there but the blue frog has come back on stage.</p>")
+	       newText ("<p> Look, it isn't the blue frog! The blue frog has come back in front of the curtain, but the shadow is still there in the spotlight.</p>")
 	          ,        
 	     newImage ("bluefrog.png")
                .print ()
@@ -1305,7 +1357,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Look, it's not the purple frog. The purple frog has come back from behind the curtain, joining the blue frog, but the shadow is still there.</p>")
+	       newText ("<p> Look, it's not the purple frog! The purple frog has just come back from behind the curtain, joining the blue frog, but the shadow is still there in the spotlight.</p>")
 	         ,       
 	     newImage ("twofrogs.png")
                .print ()
@@ -1677,7 +1729,7 @@ PennController("experiment" ,
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now the shadow of the cat is still there but the green cat has come back on stage.</p>")
+	       newText ("<p> Look, it's not the green cat! The green cat has just come in front of the curtain, but the shadow is still there in the spotlight.</p>")
 	          ,        
 	     newImage ("greencat.jpg")
                .print ()
@@ -1920,7 +1972,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Look, it's not the blue cat. The blue cat has come back from behind the curtain, joining the green frog, but the shadow is still there.</p>")
+	       newText ("<p> Look, it's not the blue cat! The blue cat has just come back in front of the curtain, joining the green frog, but the shadow is still there in the spotlight.</p>")
 	         ,         
 	     newImage ("twocats.jpg")
                .print ()
@@ -2294,7 +2346,7 @@ PennController("experiment" ,
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Now the shadow of the cow is still there but the orange cow has come back on stage.</p>")
+	       newText ("<p> Look, it's not the orange cow! The orange cow has just come back in front of the curtain, but the shadow is still there in the spotlight.</p>")
 	          ,        
 	     newImage ("orangecow.png")
                .print ()
@@ -2537,7 +2589,7 @@ newSelector()
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Look, it's not the yellow cow. The yellow cow has come back from behind the curtain, joining the orange cow, but the shadow is still there.</p>")
+	       newText ("<p> Look, it's not the yellow cow! The yellow cow has come back in front of the curtain, joining the orange cow, but the shadow is still there in the spotlight.</p>")
 	         ,         
 	     newImage ("twocows.png")
                .print ()
