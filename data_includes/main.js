@@ -1419,7 +1419,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
 		,
 
@@ -1457,7 +1457,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the red frog.</p>")
@@ -1494,7 +1494,7 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newImage ("frogshadow.jpg")
+		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
 		,
 		
