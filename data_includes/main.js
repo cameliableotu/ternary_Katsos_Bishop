@@ -2749,6 +2749,7 @@ PennController("experiment" ,
          ,
       newImage ("cowshadowonecowonstage", "cowshadowonecowonstage.png")
          .print()
+	       ,
 	       newAudio("cowsounds", "cowsounds.mp3")
 		.play()
 	       ,
