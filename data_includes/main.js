@@ -1848,6 +1848,7 @@ PennController("experiment" ,
           ,
       newImage ("catshadowonecatonstage", "catshadowonecatonstage.png")
          .print()
+	       ,
 	       newAudio("catsounds", "catsounds.mp3")
 		.play(),
 	       
@@ -2769,7 +2770,7 @@ PennController ("experiment",
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
 		,
-		newText ("<p> How will you reward the baby dragon? </p>)
+		newText ("<p> How will you reward the baby dragon? </p>")
 			 ,
 	       newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
