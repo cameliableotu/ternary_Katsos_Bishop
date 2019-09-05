@@ -75,7 +75,7 @@ PennController("details" ,
   newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
 	       ,
    newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
-   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple.  </p>"),
+   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
   newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
    newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
@@ -131,7 +131,7 @@ PennController("trial2" ,
 	       ,
 	       newText ("<p> The baby dragon says: It is a mouse. </p>")
 	       ,
-	       newText ("<p> The baby dragon made an incorrect description. The shadow does not belong to a mouse, but to a bunny. </p>"),
+	       newText ("<p> The baby dragon made a bad description. The shadow does not belong to a mouse, but to a bunny. </p>"),
 	       newText ("<p> Because of this, you will give the baby dragon a small apple, not a big apple or a huge apple. </p>"),
 	       newText ("<p> To reward the dragon, you will click on the apple which is his reward, in this case, the small apple.</p>"),
 	        newImage("hugeapple", "hugeapple.png")
@@ -324,7 +324,38 @@ PennController("introductionanimals" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now all the dogs have left the stage. </p>"),
+		newText ("<p> Now all the dogs have gone behind the curtain. </p>"),
+		
+  newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
+	       ,
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
+   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
+  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
+   newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       newKey(" ")
+        .wait()
+)
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
 		newText ("<p> Let's look at the shadow, and see what the baby dragon says. </p>")
 		,
 		newImage ("dogshadowalldogs","dogshadowalldogs.png")
@@ -947,12 +978,42 @@ PennController("experiment" ,
 	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-	        newText ("<p> Now they all go behind the curtain. </p>") 
-	       ,
 	       newKey(" ")
         .wait()
 	       
 	      )	
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newText ("<p> Now all the frogs have gone behind the curtain. </p>"),
+		
+  newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
+	       ,
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
+   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
+  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
+   newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       newKey(" ")
+        .wait()
+)
 ;
 PennController ("experiment",
 		defaultText
@@ -1572,12 +1633,42 @@ PennController("experiment" ,
 	       newAudio("catsounds", "catsounds.mp3")
 		.play()
 		,
-	        newText ("<p> Now they all go behind the curtain. </p>") 
-	       ,
 	       newKey(" ")
         .wait()
 	       
 	      )	
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newText ("<p> Now all the cats have left the stage. </p>"),
+		
+  newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
+	       ,
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
+   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
+  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
+   newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       newKey(" ")
+        .wait()
+)
 ;
 PennController ("experiment",
 		defaultText
@@ -2194,12 +2285,42 @@ PennController("experiment" ,
 	       newAudio("cowsounds", "cowsounds.mp3")
 		.play()
 		,
-	        newText ("<p> Now they all go behind the curtain. </p>") 
-	       ,
 	       newKey(" ")
         .wait()
 	       
 	      )	
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newText ("<p> Now all the cows have left the stage. </p>"),
+		
+  newText ("<p> The baby dragon has to describe what he thinks is behind the shadow. </p>")
+	       ,
+   newText ("<p> If it's the best description, you have to reward the baby dragon with a huge apple. </p>"),
+   newText ("<p> If it's a good description, but not the best description, you'll give him a big apple. </p>"),
+  newText ("<p> If it's a bad description, you'll just give him a small apple. </p>"),
+   newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	       newKey(" ")
+        .wait()
+)
 ;
 PennController ("experiment",
 		defaultText
