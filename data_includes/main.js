@@ -2504,7 +2504,7 @@ PennController("experiment" ,
          .print()
 	       ,
 
-	       newAudio("cowsounds", "cowsounds.mp3")
+	       newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play(),
 	       
 	       newKey(" ")
@@ -2750,7 +2750,7 @@ PennController("experiment" ,
       newImage ("cowshadowonecowonstage", "cowshadowonecowonstage.png")
          .print()
 	       ,
-	       newAudio("cowsounds", "cowsounds.mp3")
+	       newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 	       ,
 	       newKey(" ")
@@ -2766,7 +2766,7 @@ PennController ("experiment",
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-		newAudio("cowsounds", "cowsounds.mp3")
+		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
@@ -2921,7 +2921,7 @@ PennController("experiment" ,
 	     newImage ("greencowrevealedonstage.jpg")
                .print ()
 	       ,
-	       newAudio("cowsounds", "cowsounds.mp3")
+	       newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
 	       newKey(" ")
