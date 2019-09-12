@@ -94,6 +94,7 @@ PennController("details" ,
         .settings.add( 250 , 0 , getImage("bigapple") )
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
+	       ,
 	       newText ("<p> To move to the next page, use the space bar. </p>")
 	       .print()
 	       ,
