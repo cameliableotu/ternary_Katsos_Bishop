@@ -48,6 +48,9 @@ PennController("welcome" ,
 	     newImage ("wizardanddragon.png")
                .print ()
 	       ,
+	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       .print()
+	       ,
 	       newKey(" ")
         .wait());
 PennController("details" ,
@@ -64,6 +67,9 @@ newText ("<p> Now Merlin is playing the shadow game with a really cute baby drag
  newText ("<p> For instance, in the image below, there are three cats, and none of them is in front of the curtain. They all went behind the curtain, but the shadow belongs to only one of them. </p>"),
 	  newImage ("catshadowallcats", "catshadowallcats.png")
 	.print (),
+	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       .print()
+	       ,
 	 newKey(" ")
         .wait())
 
@@ -114,6 +120,9 @@ PennController("trial" ,
 	       ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
 		.play()
+	       ,
+	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       .print()
 	       ,
 	       newKey(" ")
         .wait()
@@ -531,7 +540,7 @@ PennController("experiment" ,
 	     newImage ("threedogs.png")
                .print ()
 	       ,
-	       newText ("<p> To move to the next page, always use the space bar. </p>")
+	       newText ("<p> To move to the next page, use the space bar. </p>")
 	       .print(),
 	       newKey(" ")
         .wait()
@@ -550,6 +559,9 @@ PennController("experiment" ,
 	       ,
 	       	newAudio("barking", "barking.mp3")
 		.play()
+	       ,
+	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       .print()
 	       ,
 	       newKey(" ")
         .wait()
@@ -974,6 +986,9 @@ PennController("experiment" ,
 	       	newAudio("barking", "barking.mp3")
 		.play()
 	       ,
+	       newText ("<p> To move to the next page, use the space bar. </p>")
+	       .print()
+	       ,
 	       newKey(" ")
         .wait()
 	       
@@ -991,7 +1006,7 @@ PennController("experiment" ,
 	       newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-	       newText ("<p> To move to the next page, always use the space bar. </p>")
+	       newText ("<p> To move to the next page, use the space bar. </p>")
 	       .print(),
 	       
 	       newKey(" ")
@@ -1027,7 +1042,7 @@ PennController ("experiment",
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
-		newText ("<p> To move to the next page, always use the space bar. </p>")
+		newText ("<p> To move to the next page, use the space bar. </p>")
 	       .print()
 		,
 	       newKey(" ")
