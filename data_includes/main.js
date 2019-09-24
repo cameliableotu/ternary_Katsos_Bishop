@@ -370,187 +370,11 @@ PennController ("experiment",
         .wait()
 )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newText ("<p> Let's look at the shadow, and see what the baby dragon says. </p>")
-		,
-		newImage ("dogshadowalldogs","dogshadowalldogs.png")
-               .print ()
-		,
-		newAudio("barking", "barking.mp3")
-		.play()
-		,
-
-		newText ("<p> Baby Dragon: It is certain that it is a dog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	     newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-		
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowalldogs", "dogshadowalldogs.png")
-               .print ()
-		,
-	
-		newText ("<p> Baby Dragon: It is possible that it is a cat. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	     newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowalldogs","dogshadowalldogs.png")
-               .print ()
-		,
-
-		newText ("<p> Baby Dragon: It is certain that it is a cat. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowalldogs", "dogshadowalldogs.png")
-               .print ()
-		,
-
-		newText ("<p> Baby Dragon: It is possible that it is a dog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-
-.log( "ID" , getVar("ID") )
-;
 
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Very well. Yes, the shadow belongs to a dog indeed. It is one of the three dogs you saw in the beginning.</p>")
-	         ,         
-	     newImage ("threedogs.png")
-               .print ()
-	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print(),
-	       newKey(" ")
-        .wait()
-	       
-	      )
-;
-PennController("experiment" ,
-	    defaultText
-	        .print(),
-  newText ("<p> Oh, look, the yellow dog has just come in front of the curtain, but the shadow is still there in the spotlight.</p>")
+  newText ("<p> Oh, look, the yellow dog has just come in front of the curtain, but we can see the shadow there in the spotlight.</p>")
 	          ,    
   newText ("<p> So the shadow is not the yellow dog! </p>")
 			,
@@ -578,6 +402,44 @@ PennController ("experiment",
 		,
 		newAudio("barking", "barking.mp3")
 		.play()
+		,
+		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
+		,
+		newText ("<p> How will you reward the baby dragon? </p>")
+		,
+	       newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	    
+newSelector()
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
+    .settings.log()
+    .wait()
+)
+
+.log( "ID" , getVar("ID") )
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
+               .print ()
 		,
 		newText ("<p> Baby Dragon: It is possible that it is the red dog.</p>")
 		,
@@ -608,203 +470,16 @@ newSelector()
     .settings.log()
     .wait()
 )
-
 .log( "ID" , getVar("ID") )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is the yellow dog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the yellow dog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("dogshadowonedogonstage", "dogshadowonedogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	     newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	 newText ("<p> Oh, look, the red dog has just come in front of the curtain, joining the yellow dog, but the shadow is still there in the spotlight.</p>")
+	 newText ("<p> Oh, look, the red dog and the yellow dog have come in front of the curtain.</p>")
 	          ,    
 	  newText ("<p> So the shadow is not the red dog! And it is not the yellow dog! </p>")
 			,
-      newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
+	   newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
          .print()
     ,
 	       	newAudio("barking", "barking.mp3")
@@ -829,7 +504,7 @@ PennController ("experiment",
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		 ,
@@ -863,13 +538,15 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
+		newText ("<p> It is certain that it is the blue dog indeed! Let's see what the baby dragon says. </p>")
+		,
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -907,7 +584,7 @@ PennController ("experiment",
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the blue dog.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the red dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -944,7 +621,7 @@ PennController ("experiment",
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the red dog.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the yellow dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1049,182 +726,10 @@ PennController ("experiment",
         .wait()
 )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newText ("<p> Let's take a look at the shadow, and see what the baby dragon says.</p>")
-		,
-		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
-               .print ()
-		,
-		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
-		.play()
-		,
-
-		newText ("<p> Baby Dragon: It is possible that it is a dog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-		
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is a frog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is a dog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowallfrogs", "frogshadowallfrogs.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is a frog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Very well. Yes, the shadow belongs to a frog indeed. It is one of the three frogs you saw in the beginning.</p>")
-	         ,         
-	     newImage ("threefrogs.png")
-               .print ()
-	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print()
-	       ,
-	       newKey(" ")
-        .wait()
-	       
-	      )
-;
-PennController("experiment" ,
-	    defaultText
-	        .print(),
-	       newText ("<p> Oh, look, the blue frog has just come in front of the curtain, but the shadow is still there in the spotlight.</p>")
+	       newText ("<p> Oh, look, the blue frog has just come in front of the curtain, but we can see the shadow in the spotlight.</p>")
 	          ,    
 	       newText ("<p> So the shadow is not the blue frog! </p>")
 			,
@@ -1252,7 +757,7 @@ PennController ("experiment",
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the purple frog.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the purple frog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1294,155 +799,6 @@ PennController ("experiment",
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
 	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue frog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
-               .print ()
-		,
-
-		newText ("<p> Baby Dragon: It is possible that it is the purple frog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the red frog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowonefrogonstage", "frogshadowonefrogonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is the blue frog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
         .settings.size(200,200)
         // .print()
 	       ,
@@ -1502,45 +858,6 @@ PennController ("experiment",
 		newAudio("frogsounds2sec", "frogsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the purple frog.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
-               .print ()
-		,
-
 		newText ("<p> Baby Dragon: It is certain that it is the purple frog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
@@ -1572,13 +889,55 @@ newSelector()
 )
 .log( "ID" , getVar("ID") )
 ;
+
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newText ("<p> It is indeed certain that it is the purple frog. </p>"),
+		newText ("<p> Let's see what the baby dragon says. </p>"),
+
+		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
+               .print ()
+		,
+
+		newText ("<p> Baby Dragon: It is possible that it is the purple frog.</p>")
+		,
+		newText ("<p> How will you reward the baby dragon? </p>")
+		,
+	       newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	    
+newSelector()
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
+    .settings.log()
+    .wait()
+)
+.log( "ID" , getVar("ID") )
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
 		newImage ("frogshadowtwofrogsonstage", "frogshadowtwofrogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the red frog.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the red frog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1616,7 +975,7 @@ PennController ("experiment",
                .print ()
 		,
 		
-		newText ("<p> Baby Dragon: It is certain that it is the red frog. </p>")
+		newText ("<p> Baby Dragon: It is possible that it is the blue frog. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1718,182 +1077,11 @@ PennController ("experiment",
         .wait()
 )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newText ("<p> Let's take a look at the shadow, and see what the baby dragon says.</p>")
-		,
-		newImage ("catshadowallcats","catshadowallcats.png")
-               .print ()
-		,
-		newAudio("catsounds", "catsounds.mp3")
-		.play()
-		,
-
-		newText ("<p> Baby Dragon: It is possible that it is a dog. </p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-		
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("catshadowallcats","catshadowallcats.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is a cat. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("catshadowallcats","catshadowallcats.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is a dog. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("catshadowallcats","catshadowallcats.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is a cat. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
 
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Very well. Yes, the shadow belongs to a cat indeed. It is one of the three cats you saw in the beginning.</p>")
-	         ,         
-	     newImage ("threecats.png")
-               .print ()
-	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print()
-	       ,
-	       newKey(" ")
-        .wait()
-	       
-	      )
-;
-PennController("experiment" ,
-	    defaultText
-	        .print(),
-	        newText ("<p> Oh, look, the green cat has just come in front of the curtain, but the shadow is still there in the spotlight.</p>")
+	        newText ("<p> Oh, look, the green cat has just come in front of the curtain, but we can see a shadow there in the spotlight.</p>")
 	          ,    
 	       newText ("<p> So the shadow is not the green cat! </p>")
           ,
@@ -1923,80 +1111,6 @@ PennController ("experiment",
 		,
 
 		newText ("<p> Baby Dragon: It is possible that it is the blue cat.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is the green cat.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the pink cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2064,80 +1178,7 @@ newSelector()
 )
 .log( "ID" , getVar("ID") )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-       newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue cat.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the green cat.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
+
 
 PennController("experiment" ,
 	    defaultText
@@ -2205,10 +1246,14 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
+		newText ("<p> It is certain that it is the pink cat indeed.</p>")
+		,
+		newText ("<p> Let's see what the Baby Dragon says about the shadow. </p>")
+		,
 		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the blue cat.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the pink cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2245,7 +1290,7 @@ PennController ("experiment",
 		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the pink cat.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the blue cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2282,7 +1327,7 @@ PennController ("experiment",
 		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue cat. </p>")
+		newText ("<p> Baby Dragon: It is possible that it is the green cat. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2385,183 +1430,11 @@ PennController ("experiment",
         .wait()
 )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newText ("<p> Let's take a look at the shadow, and see what the baby dragon says.</p>")
-		,
-		newImage ("cowshadowallcows","cowshadowallcows.png")
-               .print ()
-		,
-		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
-		.play()
-		,
-
-		newText ("<p> Baby Dragon: It is certain that it is a cat. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-		
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowallcows","cowshadowallcows.png")
-               .print ()
-		,
-
-		newText ("<p> Baby Dragon: It is possible that it is a cow. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	     newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowallcows","cowshadowallcows.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is a cow. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowallcows","cowshadowallcows.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is a cat. </p>")
-	       ,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	      newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
 
 PennController("experiment" ,
 	    defaultText
 	        .print(),
-	       newText ("<p> Very well. Yes, the shadow belongs to a cow indeed. It is one of the three cows you saw in the beginning.</p>")
-	         ,         
-	     newImage ("threecows.png")
-               .print ()
-	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print()
-	       ,
-	       newKey(" ")
-        .wait()
-	       
-	      )
-;
-PennController("experiment" ,
-	    defaultText
-	        .print(),
-	       newText ("<p> Oh, look, the orange cow has just come in front of the curtain, but the shadow is still there in the spotlight.</p>")
+	       newText ("<p> Oh, look, the orange cow has just come in front of the curtain, but we can see a shadow there in the spotlight.</p>")
 	          ,    
 	       newText ("<p> So the shadow is not the orange cow! </p>")
 			,
@@ -2590,7 +1463,7 @@ PennController ("experiment",
 		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the green cow.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2658,154 +1531,6 @@ newSelector()
 )
 .log( "ID" , getVar("ID") )
 ;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the orange cow.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is certain that it is the yellow cow.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon: It is possible that it is the orange cow.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
 
 PennController("experiment" ,
 	    defaultText
@@ -2839,7 +1564,7 @@ PennController ("experiment",
 		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 			 ,
@@ -2874,10 +1599,14 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
+		newText ("<p> It is certain that it is green cow indeed! </p>")
+		,
+		newText ("<p> Now let's see what the Baby Dragon says. </p>"),
+		
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the yellow cow.</p>")
+		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2914,7 +1643,7 @@ PennController ("experiment",
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the green cow.</p>")
+		newText ("<p> Baby Dragon: It is certain that it is the yellow cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -2952,7 +1681,7 @@ PennController ("experiment",
                .print ()
 		,
 		
-		newText ("<p> Baby Dragon: It is possible that it is the yellow cow. </p>")
+		newText ("<p> Baby Dragon: It is possible that it is the orange cow. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
