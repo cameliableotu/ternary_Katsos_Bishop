@@ -101,9 +101,7 @@ PennController("details" ,
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
-	       newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print()
-	       ,
+	    
 	       newKey(" ")
         .wait()
 	        
@@ -128,13 +126,21 @@ PennController("trial" ,
         .wait()
 )
 ;
+newText ("<p> Baby Dragon Flurry has to describe who he thinks the shadow belongs to. </p> "),
+	       newImage ("Flurry", "Flurry.png")
+	       .print ()
+	       ,
+	       newKey(" ")
+        .wait()
+)
+;
 PennController("trial2" ,
 	    defaultText
 	        .print()
 	    
 	       ,
 	       newText 
-	       ("<p> Hop he goes behind the curtain. The baby dragon sees the following shadow. </p>"),
+	       ("<p> The bunny goes behind the curtain. Baby Dragon Flurry sees the following shadow. </p>"),
 	      
 	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
 	       .print ( )
@@ -142,9 +148,9 @@ PennController("trial2" ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
 		.play()
 	       ,
-	       newText ("<p> The baby dragon says: It is a blue bunny. </p>")
+	       newText ("<p> Baby Dragon Flurry says: It is a blue bunny. </p>")
 	       ,
-	       newText ("<p> The baby dragon made a bad description. The shadow does not belong to a blue bunny, but to a pink bunny. </p>"),
+	       newText ("<p> Baby Dragon Flurry made a bad description. The shadow does not belong to a blue bunny, but to a pink bunny. </p>"),
 	       newText ("<p> Because of this, you will give the baby dragon a small apple, not a big apple or a huge apple. </p>"),
 	       newText ("<p> To reward the dragon, you will click on the apple which is his reward, in this case, the small apple.</p>"),
 	        newImage("hugeapple", "hugeapple.png")
@@ -182,7 +188,7 @@ PennController("trialbunny" ,
 	    
 	       ,
 	       newText 
-	       ("<p> Now let's see how you manage on your own. The baby dragon sees the following shadow. To reward the dragon, just click on the apple you want to give him.</p>"),
+	       ("<p> Now let's see how you manage on your own. Baby Dragon Flurry sees the following shadow. To reward the dragon, just click on the apple you want to give him.</p>"),
 	      
 	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
 	       .print ( )
@@ -190,7 +196,7 @@ PennController("trialbunny" ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
 		.play()
 	       ,
-	       newText ("<p> Baby Dragon: It is a yellow bunny. </p>")
+	       newText ("<p> Baby Dragon Flurry: It is a yellow bunny. </p>")
 	       ,
 	       newText ("<p> How will you reward the baby dragon? </p>")
 	       ,
@@ -232,7 +238,7 @@ PennController("trialbunny2" ,
 	       newImage ("bunnyshadow2", "bunnyshadowallbunnies.png")
 	       .print ( )
 	       ,
-	       newText ("<p> Baby Dragon: It is a pink bunny.</p>")
+	       newText ("<p> Baby Dragon Flurry: It is a pink bunny.</p>")
 	       ,
 	       newText ("<p> How will you reward the baby dragon? </p>")
 	       ,
