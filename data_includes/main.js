@@ -126,6 +126,11 @@ PennController("trial" ,
         .wait()
 )
 ;
+PennController("trial" ,
+	    defaultText
+	        .print()
+	    
+	       ,
 newText ("<p> Baby Dragon Flurry has to describe who he thinks the shadow belongs to. </p> "),
 	       newImage ("Flurry", "Flurry.png")
 	       .print ()
