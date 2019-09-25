@@ -44,8 +44,8 @@ PennController("welcome" ,
 	    ,
 	    newText ("<p> Once upon a time in a faraway land there lived a very gifted wizard Merlin who liked to play with shadows and make others guess what they are. </p>")
 	    ,
-	       newText ("<p> Now Merlin is playing the shadow game with two really cute baby dragons, Flurry and Linda, who have to guess whose animal the shadow belongs to. </p>")
-	                  
+	       newText ("<p> Now Merlin is playing the shadow game with two really cute baby dragons, Flurry and Bindy, who have to guess whose animal the shadow belongs to. </p>")
+	              ,    
 	     newImage ("wizardanddragonsnames85.png")
                .print ()
 	       ,
@@ -53,14 +53,17 @@ PennController("welcome" ,
 	       .print()
 	       ,
 	       newKey(" ")
-        .wait());
+        .wait()
+)
+;
+
 PennController("details" ,
 	    defaultText
 	        .print()
 	,
   newText ("<p> Alongside the shadow, the images will show all the animals in the game on the side, as well as the animals which are in front of the curtain. </p>")
 ,
-	       ,
+	     
  newText ("<p> For instance, in the image below, there are three cats, and one of them is in front of the curtain. The others are behind the curtain, but the shadow belongs to only one of them. </p>"),
 	  newImage ("catshadowonecatonstage", "catshadowonecatonstage.png")
 	.print (),
