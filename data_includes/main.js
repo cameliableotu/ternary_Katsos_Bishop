@@ -1627,15 +1627,26 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now let's see what the baby dragon says about the shadow. </p>")
+		newText ("<p> Now let's see what baby dragon Bindy says about the shadow. </p>")
 	       ,
+		newImage ("Bindy80", "Bindy80.png")
+		.print ()
+		,
+		 newKey(" ")
+        .wait()
+	       
+	      )
+;
+PennController ("experiment",
+		defaultText
+	        .print(),
 		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
 		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
