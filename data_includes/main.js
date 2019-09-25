@@ -403,7 +403,8 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> Now let's see what baby dragon Flurry says about the shadow. </p>")
 	       ,
-		newImage ("Flurry", "Flurry.png")
+		newImage ("Flurry", "Flurry.png").
+		print ()
 		,
 		newKey(" ")
         .wait()
@@ -610,7 +611,7 @@ PennController ("experiment",
  PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
+		newImage ("<p> dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
 		newAudio("barking", "barking.mp3")
@@ -789,9 +790,6 @@ PennController ("experiment",
 	  .settings.add(500, 0 , getImage("smallapple") )
         .print()
 	       ,
-		newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print()
-		,
 	       newKey(" ")
         .wait()
 )
