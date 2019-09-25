@@ -621,11 +621,9 @@ PennController ("experiment",
 		newImage ("Bindy80", "Bindy80.png")
 		.print ()
 		,
-		newText ("<p> To move to the next page, use the space bar. </p>")
-	       .print(),
-	       newKey(" ")
+		newKey(" ")
         .wait()
-	       
+	           
 	      )
 ;
 
