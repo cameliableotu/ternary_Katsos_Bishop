@@ -1672,6 +1672,44 @@ PennController ("experiment",
 		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
+		newText ("<p> Baby Dragon Bindy: It is certain that it is the yellow cow.</p>")
+		,
+		newText ("<p> How will you reward the baby dragon? </p>")
+		,
+	       newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	    
+newSelector()
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
+    .settings.log()
+    .wait()
+)
+.log( "ID" , getVar("ID") )
+;
+
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
+               .print ()
+		,
 		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
@@ -1706,44 +1744,7 @@ newSelector()
 )
 .log( "ID" , getVar("ID") )
 ;
-;
-PennController ("experiment",
-		defaultText
-	        .print(),
-		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
-               .print ()
-		,
-		newText ("<p> Baby Dragon Bindy: It is certain that it is the yellow cow.</p>")
-		,
-		newText ("<p> How will you reward the baby dragon? </p>")
-		,
-	       newImage("hugeapple", "hugeapple.png")
-        .settings.size(200,200)
-        // .print()
-	       ,
-	      newImage("bigapple", "bigapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-	          newImage("smallapple", "smallapple.png")
-        .settings.size(200,200)
-        // .print()
-    ,
-    newCanvas(700,200)
-        .settings.add( 0 , 0 , getImage("hugeapple") )
-        .settings.add( 250 , 0 , getImage("bigapple") )
-	  .settings.add(500, 0 , getImage("smallapple") )
-        .print()
-	       ,
-	    
-newSelector()
-    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
-    .settings.keys(          "F"    ,          "J")
-    .settings.log()
-    .wait()
-)
-.log( "ID" , getVar("ID") )
-;
+
 
 PennController ("experiment",
 		defaultText
