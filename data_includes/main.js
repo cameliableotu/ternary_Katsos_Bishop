@@ -147,7 +147,7 @@ PennController("trial2" ,
 	       newText 
 	       ("<p> The orange bunny remains in front of the curtain, the other goes behind the curtain. Baby Dragon Flurry sees the following shadow. </p>"),
 	      
-	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage1.png")
+	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
 	       .print ( )
 	       ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
@@ -195,7 +195,7 @@ PennController("trialbunny" ,
 	       newText 
 	       ("<p> Now let's see how you manage on your own. Baby Dragon Flurry sees the following shadow. To reward the dragon, just click on the apple you want to give him.</p>"),
 	      
-	       newImage ("bunnyshadow2", "bunnyshadowallonebunnyonstage1.png")
+	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
 	       .print ( )
 	       ,
 	       newAudio("bunnysounds", "bunnysounds.mp3")
@@ -240,7 +240,7 @@ PennController("trialbunny2" ,
 	       ,
 	       
 	      
-	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage.png")
+	       newImage ("bunnyshadow2", "bunnyshadowonebunnyonstage2.png")
 	       .print ( )
 	       ,
 	       newText ("<p> Baby Dragon Flurry: It is the pink bunny.</p>")
@@ -283,7 +283,7 @@ PennController("trialbunny2" ,
 	       newText ("<p> Now let's see who the shadow belongs to! It is the pink bunny! </p>")
 	       
 	      
-	       newImage ("bunnyrevealed", "bunnyrevealedonstage1.png")
+	       newImage ("bunnyrevealed", "bunnyrevealedonstage1.jpg")
 	       .print ( )
 	       ,
 	        newAudio("bunnysounds", "bunnysounds.mp3")
