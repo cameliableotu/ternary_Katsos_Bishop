@@ -544,7 +544,7 @@ PennController ("experiment",
 		newAudio("barking", "barking.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the blue dog.</p>")
+		newText ("<p> Baby Dragon Flurry: It is certain that it is the blue dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		 ,
@@ -578,11 +578,11 @@ newSelector()
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> It is certain that it is the blue dog indeed!</p?")
+		newText ("<p> It is certain that it is the blue dog indeed! </p>")
 		,
 		newText ("<p> Let's see what baby dragon Bindy says about the shadow. </p>")
 		,
-		newImage ("Bindy", "Bindy.png")
+		newImage ("Bindy80", "Bindy80.png")
 		.print ()
 		,
 		newText ("<p> To move to the next page, use the space bar. </p>")
@@ -677,7 +677,7 @@ PennController ("experiment",
 		newImage ("dogshadowtwodogsonstage", "dogshadowtwodogsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the yellow dog.</p>")
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the yellow dog.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -806,7 +806,7 @@ PennController ("experiment",
 		defaultText
 	        .print(),
 		newText ("<p> Now let's see what baby dragon Bindy says about the shadow. </p>"),
-		newImage ("Bindy", "Bindy.png")
+		newImage ("Bindy80", "Bindy80.png")
 		.print ()
 		,
 		newKey(" ")
@@ -1412,7 +1412,7 @@ PennController ("experiment",
 		,
 		newText ("<p> Now let's see what baby dragon Bindy says about the shadow. </p>")
 		,
-		newImage ("Bindy", "Bindy.png")
+		newImage ("Bindy80", "Bindy80.png")
 		.print ()
 		,
 		 newKey(" ")
@@ -1423,8 +1423,6 @@ PennController ("experiment",
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Let's see what baby dragon Bindy says about the shadow. </p>")
-		,
 		newImage ("catshadowtwocatsonstage","catshadowtwocatsonstage.png")
                .print ()
 		,
@@ -1677,13 +1675,52 @@ newSelector()
 )
 .log( "ID" , getVar("ID") )
 ;
+;
 PennController ("experiment",
 		defaultText
 	        .print(),
 		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the yellow cow.</p>")
+		newText ("<p> Baby Dragon Bindy: It is certain that it is the yellow cow.</p>")
+		,
+		newText ("<p> How will you reward the baby dragon? </p>")
+		,
+	       newImage("hugeapple", "hugeapple.png")
+        .settings.size(200,200)
+        // .print()
+	       ,
+	      newImage("bigapple", "bigapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+	          newImage("smallapple", "smallapple.png")
+        .settings.size(200,200)
+        // .print()
+    ,
+    newCanvas(700,200)
+        .settings.add( 0 , 0 , getImage("hugeapple") )
+        .settings.add( 250 , 0 , getImage("bigapple") )
+	  .settings.add(500, 0 , getImage("smallapple") )
+        .print()
+	       ,
+	    
+newSelector()
+    .settings.add( getImage("hugeapple") , getImage ("bigapple"), getImage("smallapple") )
+    .settings.keys(          "F"    ,          "J")
+    .settings.log()
+    .wait()
+)
+.log( "ID" , getVar("ID") )
+;
+
+PennController ("experiment",
+		defaultText
+	        .print(),
+		newImage ("cowshadowonecowonstage","cowshadowonecowonstage.png")
+               .print ()
+		,
+		newText ("<p> Baby Dragon Bindy: It is possible that it is the yellow cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1739,7 +1776,7 @@ PennController("experiment" ,
 PennController ("experiment",
 		defaultText
 	        .print(),
-		newText ("<p> Now let's see what the baby dragon says about the shadow. </p>")
+		newText ("<p> Now let's see what baby dragon Bindy says about the shadow. </p>")
 		,
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
@@ -1747,7 +1784,7 @@ PennController ("experiment",
 		newAudio("cowsounds2sec", "cowsounds2sec.mp3")
 		.play()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the green cow.</p>")
+		newText ("<p> Baby Dragon Bindy: It is certain that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 			 ,
@@ -1784,12 +1821,23 @@ PennController ("experiment",
 	        .print(),
 		newText ("<p> It is certain that it is green cow indeed! </p>")
 		,
-		newText ("<p> Now let's see what the Baby Dragon says. </p>"),
+		newText ("<p> Now let's see what baby dragon Flurry says about the shadow. </p>"),
+		newImage ("Flurry", "Flurry.png")
+		.print ()
+		,
+		newKey(" ")
+        .wait()
+	       
+	      )
+;
 		
+PennController ("experiment",
+		defaultText
+	        .print(),
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the green cow.</p>")
+		newText ("<p> Baby Dragon Flurry: It is possible that it is the green cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1826,7 +1874,7 @@ PennController ("experiment",
 		newImage ("cowshadowtwocowsonstage","cowshadowtwocowsonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is certain that it is the yellow cow.</p>")
+		newText ("<p> Baby Dragon Flurry: It is certain that it is the yellow cow.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1864,7 +1912,7 @@ PennController ("experiment",
                .print ()
 		,
 		
-		newText ("<p> Baby Dragon: It is possible that it is the orange cow. </p>")
+		newText ("<p> Baby Dragon Flurry: It is possible that it is the orange cow. </p>")
 	       ,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
@@ -1913,10 +1961,10 @@ PennController("experiment" ,
 ;
 PennController.SendResults( "send" );
 PennController( "final" ,
-	       newText ("<p> Thank you for your participation! The survey code for MTurk is: yx79c2. Please copy-paste it to MTurk. </p>")
+	       newText ("<p> Thank you for your participation! The survey code for MTurk is: cutiestar6. Please copy-paste it to MTurk. </p>")
 	       .print()
 	       ,
-	 newText("<p> The baby dragon thanks you for the apples, and so does the wizard! Bubbye! </p>")
+	 newText("<p> The baby dragons thank you for the apples, and so does the wizard! Bubbye! </p>")
         .print(),
     newButton("void")
         .wait()
