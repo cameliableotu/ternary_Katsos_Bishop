@@ -281,7 +281,7 @@ PennController("trialbunny2" ,
 	    
 	       ,
 	       newText ("<p> Now let's see who the shadow belongs to! It is the pink bunny! </p>")
-	       
+	       ,
 	      
 	       newImage ("bunnyrevealed", "bunnyrevealedonstage1.jpg")
 	       .print ( )
