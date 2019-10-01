@@ -1340,7 +1340,7 @@ PennController ("experiment",
 		newImage ("catshadowonecatonstage","catshadowonecatonstage.png")
                .print ()
 		,
-		newText ("<p> Baby Dragon: It is possible that it is the blue cat.</p>")
+		newText ("<p> Baby Dragon Flurry: It is possible that it is the blue cat.</p>")
 		,
 		newText ("<p> How will you reward the baby dragon? </p>")
 		,
